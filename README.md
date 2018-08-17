@@ -1,31 +1,29 @@
-# Homework Assignment #10:
+# Homework Assignment Week 12:
 ### bamazon
 
-This repository is for homework assignment #10 for University of Miami Coding Bootcamp. 
+This repository is for the week 12 homework assignment for University of Miami Coding Bootcamp. 
 
-This game was built with JavaScript, node.
+This Amazon-like storefront uses Node.js to manipulate an inventory of products populated in MySQL. The assignment is to create interfaces from the point-of-view of the Customer, the Manager, and the Executive.
 
-## It's hosted online here: https://lsweeney15.github.io/Psychic-Game/
+## Customer Interface:
+1. The user ("customer") is welcomed to the bAmazon Store and able to view the current inventory of store items: item IDs, descriptions, departments in which the items are located and their prices. 
 
-## How to Play:
-1. There is a Table inside of that database called Products.
+3. Following this prompt, the user is able to purchase one of the in-stock items by entering the product name. Should their input not match an available product, they will receive the following message: "That product is not available in this store!"
 
-2. The products table was created with the following columns: ItemID (unique id for each product), ProductName (Name of product), DepartmentName, Price (cost to customer), StockQuantity (how much of the product is available in stores)
+4. If the product name matches an inventory item, the user will be prompted to select the quantity in which they'd like to purchase. If the requested quantity does not exceed the existing stock quantity, the user's order is fulfilled, and the store database is updated to accurately reflect the new stock quantity. The user is thanked for their purchase. 
 
-3. I populated the database with 10+ different products.
+5. If the order exceeds the stock quantity, the user will receive the following message: "That amount exceeds our stock quantity!" and they are presented with the original store view from which to choose.
 
-4. There is a Node application called BamazonCustomer.js. Running this application will first display all of the items available for sale. Include the ids, names, and prices of products for sale.
+5. The user can exit the store at any time by hitting "Q". 
 
-5. Bamazon then prompts users with two messages.
+/Users/liamsweeney/Desktop/01-Leaving the Store.png
 
-6. The first ask them the ID of the product they would like to buy.
 
-7. The second message should ask how many units of the product they would like to buy.
 
-8. Once an order has been placed the application then checks to see if the store has enough of the product to meet the user's request.
+## Manager Interface:
+(Work In Progress)
 
-9. If not, the app will log: Insufficient quantity!, and then prevent the order from going through. However, if the store does have enough of the product, It will fulfill the users's order.
-
-10. This means updating the SQL database to reflect the remaining quantity. Once the update goes through, it will show the customer the total cost of their purchase.
+## Executive Interface:
+(Work In Progress)
 
 Liam Sweeney 2018

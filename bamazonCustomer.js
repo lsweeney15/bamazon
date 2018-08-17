@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
 
 connection.connect(function(err){
     if (err) throw err;
-    console.log("connection successful!");
+    console.log("Welcome to the bAmazon Store!");
     makeTable();
 })
 
@@ -54,7 +54,6 @@ var makeTable = function (){
                     if((res[id].stockquantity-answer.quant)>0){
                         connection.query("UPDATE products SET stockquantity=' "+(res[id].stockquantity-answer.quant)+"' WHERE productname='"+product+"'", function(err,res2){
                             console.log("Thank you for your purchase!");
-                            promptCustomer(res);
                             makeTable();
                         })
                     } else {
@@ -65,8 +64,9 @@ var makeTable = function (){
             }
         }
         if(i==res.length && correct==false){
-            console.log("Not available in this store!");
+            console.log("That product is not available in this store!");
             promptCustomer(res);
+            makeTable();
         }
     })
 }
