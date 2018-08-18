@@ -16,9 +16,7 @@ This Amazon-like storefront uses Node.js to manipulate an inventory of products 
 
 5. The user can exit the store at any time by hitting "Q". 
 
-/Users/liamsweeney/Desktop/01-Leaving the Store.png
-
-
+<img src="assets/images/01-LeavingtheStore">
 
 ## Manager Interface:
 (Work In Progress)
