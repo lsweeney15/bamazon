@@ -30,7 +30,6 @@ This Amazon-like storefront uses Node.js to manipulate an inventory of products 
 <img src="assets/images/04-ExceedingQuantity.png" width="400">
 
 
-
 ## Manager Interface:
 (Work In Progress)
 
