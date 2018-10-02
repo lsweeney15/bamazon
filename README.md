@@ -18,16 +18,16 @@ This Amazon-like storefront uses Node.js to manipulate an inventory of products 
 
 ## Screen Grabs:
 ### Leaving the Store:<br>
-<img src="assets/images/01-LeavingtheStore.png" width="400">
+<img src="assets/images/01-LeavingtheStore.png" width="600">
 
 ### Making a Successful Purchase:<br>
-<img src="assets/images/02-CorrectPurchase.png" width="400">
+<img src="assets/images/02-CorrectPurchase.png" width="600">
 
 ### Asking for a Non-existant Item:<br>
-<img src="assets/images/03-NonexistantItem.png" width="400">
+<img src="assets/images/03-NonexistantItem.png" width="600">
 
 ### Exceeding the Stock Quantity:<br>
-<img src="assets/images/04-ExceedingQuantity.png" width="400">
+<img src="assets/images/04-ExceedingQuantity.png" width="600">
 
 
 ## Manager Interface:
